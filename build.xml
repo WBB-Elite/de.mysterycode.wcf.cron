@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<build xmlns="https://www.wbb-elite.de"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="https://www.wbb-elite.de https://bitbucket.braun-software-solutions.de/projects/BWPB/repos/xsd/raw/build.xsd">
+
+    <copyright>
+        <author replace="{COPYRIGHT_AUTHOR}"><![CDATA[Florian Gail, Morik]]></author>
+        <company replace="{COPYRIGHT_COMPANY}"><![CDATA[{current} Florian Gail <https://www.mysterycode.de/>]]></company>
+        <license replace="{COPYRIGHT_LICENSE}"><![CDATA[Kostenlose Plugins <https://downloads.mysterycode.de/license/6-kostenlose-plugins/>]]></license>
+        <packageName replace="{COPYRIGHT_PACKAGE}"><![CDATA[de.mysterycode.wcf.cron]]></packageName>
+        <category replace="{COPYRIGHT_CATEGORY}"><![CDATA[External Cronjob Execution API]]></category>
+    </copyright>
+
+    <archives>
+        <archive file="files.tar">files</archive>
+    </archives>
+</build>

@@ -2,17 +2,14 @@
 
 namespace wcf\system\event\listener;
 
-use wcf\system\event\listener\IParameterizedEventListener;
 use wcf\system\WCF;
 
 /**
- * disables automatic cronjob execution via page call
- *
- * @author       Florian Gail
- * @copyright    2016 Florian Gail <https://www.mysterycode.de/>
- * @license      Kostenlose Plugins <https://downloads.mysterycode.de/license/6-kostenlose-plugins/>
- * @package      de.mysterycode.wcf.cron
- * @category     WCF
+ * @author        {COPYRIGHT_AUTHOR}
+ * @copyright     {COPYRIGHT_COMPANY}
+ * @license       {COPYRIGHT_LICENSE}
+ * @package       {COPYRIGHT_PACKAGE}
+ * @category      {COPYRIGHT_CATEGORY}
  */
 class CronjobDisableExecutionListener implements IParameterizedEventListener {
 	/**
