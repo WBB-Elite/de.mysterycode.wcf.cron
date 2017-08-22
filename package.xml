@@ -1,36 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="de.mysterycode.wcf.cron" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
- 	<packageinformation>
-		<packagename><![CDATA[External Cronjob Execution API]]></packagename>
-		<packagedescription><![CDATA[Disables automatic cronjob execution and implements a script callable via browser or shell.]]></packagedescription>
-		
-		<version><![CDATA[1.1.1]]></version>
-		<date><![CDATA[2017-07-05]]></date>
-		
-		<packageurl>https://www.mysterycode.de</packageurl>
-	</packageinformation>
-	
-	<requiredpackages>
-		<requiredpackage minversion="3.0.0 RC 1">com.woltlab.wcf</requiredpackage>
-	</requiredpackages>
+<package name="de.mysterycode.wcf.cron" xmlns="http://www.woltlab.com"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.woltlab.com https://bitbucket.braun-software-solutions.de/projects/WOLTLAB/repos/xsd/raw/vortex/package.xsd">
+    <packageinformation>
+        <packagename><![CDATA[External Cronjob Execution API]]></packagename>
+        <packagedescription>
+            <![CDATA[Disables automatic cronjob execution and implements a script callable via browser or shell.]]></packagedescription>
+        <version><![CDATA[1.1.1]]></version>
+        <date>{TO_DAY}</date>
+        <packageurl>https://www.mysterycode.de</packageurl>
+    </packageinformation>
 
-	<excludedpackages>
-		<excludedpackage version="3.1.0 Alpha 1">com.woltlab.wcf</excludedpackage>
-	</excludedpackages>
+    <requiredpackages>
+        <requiredpackage minversion="3.0.0 RC 1">com.woltlab.wcf</requiredpackage>
+    </requiredpackages>
 
-	<authorinformation>
-		<author><![CDATA[Florian Gail, Morik]]></author>
-		<authorurl><![CDATA[https://www.mysterycode.de]]></authorurl>
-	</authorinformation>
-	
-	<instructions type="install">
-		<instruction type="file" />
-		<instruction type="eventListener">xml/eventListener.xml</instruction>
-		<instruction type="option">xml/option.xml</instruction>
-		<instruction type="language" />
-	</instructions>
-	
-	<instructions type="update" fromversion="1.1.0">
-		<instruction type="file" />
-	</instructions>
+    <excludedpackages>
+        <excludedpackage version="3.1.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+    </excludedpackages>
+
+    <authorinformation>
+        <author><![CDATA[Florian Gail, Morik]]></author>
+        <authorurl><![CDATA[https://www.mysterycode.de]]></authorurl>
+    </authorinformation>
+
+    <instructions type="install">
+        <instruction type="file"/>
+        <instruction type="eventListener">xml/eventListener.xml</instruction>
+        <instruction type="option">xml/option.xml</instruction>
+        <instruction type="language"/>
+    </instructions>
+
+    <instructions type="update" fromversion="1.1.0">
+        <instruction type="file"/>
+    </instructions>
 </package>
