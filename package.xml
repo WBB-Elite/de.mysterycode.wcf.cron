@@ -6,7 +6,7 @@
         <packagename><![CDATA[External Cronjob Execution API]]></packagename>
         <packagedescription>
             <![CDATA[Disables automatic cronjob execution and implements a script callable via browser or shell.]]></packagedescription>
-        <version><![CDATA[1.1.1]]></version>
+        <version><![CDATA[1.1.2]]></version>
         <date>{TO_DAY}</date>
         <packageurl>https://www.mysterycode.de</packageurl>
     </packageinformation>
@@ -19,6 +19,15 @@
         <excludedpackage version="3.1.0 Alpha 1">com.woltlab.wcf</excludedpackage>
     </excludedpackages>
 
+    <requiredpackages>
+        <requiredpackage minversion="3.0.0">com.woltlab.wcf</requiredpackage>
+    </requiredpackages>
+
+    <compatibility>
+        <api version="2018" />
+        <api version="2017" />
+    </compatibility>
+    
     <authorinformation>
         <author><![CDATA[Florian Gail, Morik]]></author>
         <authorurl><![CDATA[https://www.mysterycode.de]]></authorurl>
@@ -32,6 +41,10 @@
     </instructions>
 
     <instructions type="update" fromversion="1.1.0">
+        <instruction type="file"/>
+    </instructions>
+    
+    <instructions type="update" fromversion="1.1.1">
         <instruction type="file"/>
     </instructions>
 </package>
